@@ -1,0 +1,68 @@
+@@ -0,0 +1,67 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class $$$_{void}_$$$ {
+
+    public static void main(String[] $$$args$$$) {
+        String[] _virusInit = { "Initializing...", "Injecting...", "Encrypting..." };
+        for (String i : _virusInit) {
+            System.out.println(i);
+            delay(500);
+        }
+
+        String _$_hex$_$ = "0xCAFEBABE";  
+        int[] _$$_arr_$$ = { 0xFF, 0xEE, 0xDD, 0xCC };  
+        for (int i = 0; i < _$$_arr_$$.length; i++) {
+            System.out.println("Loading value: " + Integer.toHexString(_$$_arr_$$[i]));
+            delay(300);
+        }
+
+        Scanner $_$_0O0oOo0_$_ = new Scanner(System.in);
+        Random $$_Random_$$ = new Random();
+
+        int _=_-_-_= $$_Random_$$.nextInt(100) + 1;
+        int __00___000 = 0;
+        int ____0__o0 = 0;
+        boolean ______$_ = false;
+
+        System.out.println("Accessing mainframe...");
+        delay(1000);  
+        System.out.println("WARNING: Unauthorized access detected.");
+        delay(1000);
+
+        System.out.println("Can you guess the hidden number? (Encrypted data incoming) ");
+        
+        while (!______$_) {
+            System.out.print("??? >>> ");
+            ____0__o0 = $_$_0O0oOo0_$_ .nextInt();
+            __00___000++;
+
+            if (____0__o0 < _=_-_-_=) {
+                System.out.println("Decryption failed. Attempt too low.");
+            } else if (____0__o0 > _=_-_-_=) {
+                System.out.println("Decryption failed. Attempt too high.");
+            } else {
+                ______$_ = true;
+                System.out.println("Access granted. System compromised in " + __00___000 + " attempts.");
+                initiateShutdown();
+            }
+        }
+
+        $_$_0O0oOo0_$_ .close();
+    }
+
+    public static void delay(int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
+            System.out.println("ERROR: Sleep interrupted.");
+        }
+    }
+
+    public static void initiateShutdown() {
+        System.out.println("Shutting down in 3... 2... 1...");
+        delay(3000);
+        System.out.println("System halted.");
+    }
+}
